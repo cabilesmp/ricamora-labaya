@@ -1,0 +1,29 @@
+body {
+background-image: url('https://res.cloudinary.com/dovgwbnxt/image/upload/v1726024514/Ricamora-Labaya_Background_exbida.png');
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+}
+header {
+background: rgba(255, 255, 255, 0.9);
+width: 100%;
+position: fixed;
+left: 0;
+top: 0;
+}
+
+section {
+height: 100vh;
+}
+
+.active {
+color: #fece5d !important;
+}
+
+.navLink {
+font-family: "Pinyon Script", cursive;
+}
+
+.elevate {
+text-shadow: 2px 2px 2px gray;
+}
