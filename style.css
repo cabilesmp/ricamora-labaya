@@ -1,29 +1,49 @@
-body {
-background-image: url('https://res.cloudinary.com/dovgwbnxt/image/upload/v1726024514/Ricamora-Labaya_Background_exbida.png');
-background-repeat: no-repeat;
-background-attachment: fixed;  
-background-size: cover;
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    background-image: url('https://res.cloudinary.com/dovgwbnxt/image/upload/v1726125395/Ricamora-Labaya_HomeBG_dxqets.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+}
+
 header {
-background: rgba(255, 255, 255, 0.9);
-width: 100%;
-position: fixed;
-left: 0;
-top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 section {
-height: 100vh;
+    height: 100vh;
 }
 
-.active {
-color: #fece5d !important;
+.navbar {
+    --bs-navbar-active-color: #fece5d;
+    --bs-navbar-hover-color: #fece5d;
 }
 
 .navLink {
-font-family: "Pinyon Script", cursive;
+    font-family: "Pinyon Script", cursive;
 }
 
 .elevate {
-text-shadow: 2px 2px 2px gray;
+    text-shadow: 2px 2px 2px gray;
+}
+
+.mainText {
+    width: 100vw;
+}
+
+@media only screen and (min-width: 600px) {
+    .mainText {width: 85vw;}
+}
+
+@media only screen and (min-width: 768px) {
+    .mainText {width: 70vw;}
 }
