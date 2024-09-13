@@ -1,0 +1,29 @@
+.loc1 {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1726199347/loc1_wikjpc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.loc2 {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1726199347/loc2_h9ofzr.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.att1 {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1726199857/att1_tdfesc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.att2 {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1726199857/att2_sau9me.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position: center;
+}

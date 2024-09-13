@@ -13,17 +13,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bg.css">
 </head>
 
-<body class="container-fluid g-0">
+<body>
     <header style="z-index: 4;">
         <nav class="navbar navbar-expand">
-            <div class="navbar-nav m-auto">
-                <a class="nav-link navLink fw-bold fs-3 mx-4 active" href="#home">Home</a>
-                <a class="nav-link navLink fw-bold fs-3 mx-4" href="#location">Location</a>
-                <a class="nav-link navLink fw-bold fs-3 mx-4" href="#attire">Attire</a>
-                <a class="nav-link navLink fw-bold fs-3 mx-4" href="#rsvp">RSVP</a>
+            <div class="navbar-nav m-auto d-flex justify-content-evenly navWidth">
+                <a class="nav-link pinyon fw-bold fs-3 active" href="#home">Home</a>
+                <a class="nav-link pinyon fw-bold fs-3" href="#location">Location</a>
+                <a class="nav-link pinyon fw-bold fs-3" href="#attire">Attire</a>
+                <a class="nav-link pinyon fw-bold fs-3" href="#rsvp">RSVP</a>
             </div>
         </nav>
     </header>
@@ -31,19 +33,51 @@
         <img src="https://res.cloudinary.com/dovgwbnxt/image/upload/v1726125395/Ricamora-Labaya_HomeBG_dxqets.png" class="imgBg">
     </div>
     <div class="d-flex flex-column top-50 start-50 translate-middle mainText bgDiv">
+        <div style="height: 50px;"></div>
         <img src="https://res.cloudinary.com/dovgwbnxt/image/upload/v1726125614/Ricamora-Labaya_MainText_axdqhz.png">
+        <button class="rsvpBtn align-self-center btn btn-secondary mb-3 playfair"><i class="bi bi-calendar2-heart"></i> RSVP</button>
+        <div class="align-self-center playfair">More Details</div>
+        <button id="detailsBtn" type="button" class="btn">
+            <img class="align-self-center" src="https://content.invisioncic.com/p289038/monthly_2020_05/arrow-down.gif.8d9aec7b8f92f2a50a1a64fce1733f3a.gif" width="50px" height="50px">
+        </button>
     </div>
-    <div class="fgDiv">
+    <div class="container g-0">
         <section id="home" class="position-relative">
         </section>
-        <section id="location" style="background-color: aqua;">
-    
+        <section id="location" class="sectionBg fgDiv elevate">
+            <div class="d-flex row g-0">
+                <div class="col-md-6 loc1 contentHeight"></div>
+                <div class="col-md-6 loc2 contentHeight"></div>
+            </div>
         </section>
-        <section id="attire" style="background-color: antiquewhite;">
-    
+        <section id="attire" class="sectionBg fgDiv">
+            <div class="d-flex row g-0">
+                <div class="col-md-6 att1 contentHeight"></div>
+                <div class="col-md-6 att2 contentHeight"></div>
+            </div>
         </section>
-        <section id="rsvp" style="background-color: hotpink;">
-    
+        <section id="rsvp" class="sectionBg fgDiv">
+            <div class="d-flex flex-column justify-content-center h-100">
+                <span class="pinyon text-center mb-2" style="font-size: 100px; color: #fece5d;">RSVP</span>
+                <div class="playfair text-center px-5" style="font-size: 24px;">We are excited to celebrate our special moment with you.</div>
+                <div class="playfair text-center px-5 mb-3" style="font-size: 24px;">Please confirm your attendance by providing your name below.</div>
+                <div>
+                    <form class="row g-0 justify-content-center px-5 mb-5">
+                        <div class="col-md-3 px-2">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="col-md-3 px-2">
+                            <label for="firstName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-warning playfair mx-2" style="width: auto; height: auto;">Yes, I can attend.</button>
+                        <button class="btn btn-secondary playfair mx-2" style="width: auto; height: auto;">Sorry, I can't.</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
