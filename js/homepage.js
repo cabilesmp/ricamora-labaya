@@ -1,6 +1,7 @@
 const navLinks = document.querySelectorAll('.nav-link')
 const detailsBtn = document.getElementById('detailsBtn')
 const sections = document.querySelectorAll('section')
+const rsvpBtn1 = document.getElementById('rsvpBtn1')
 
 navLinks.forEach((n) => {
     n.addEventListener('click', () => {
@@ -11,6 +12,10 @@ navLinks.forEach((n) => {
 
 detailsBtn.addEventListener('click', () => {
     document.getElementById('location').scrollIntoView({behavior: 'smooth'})
+})
+
+rsvpBtn1.addEventListener('click', () => {
+    document.getElementById('rsvp').scrollIntoView({behavior: 'smooth'})
 })
 
 document.addEventListener('scroll', () => {
