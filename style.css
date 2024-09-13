@@ -3,11 +3,6 @@ html {
 }
 
 body {
-    background-image: url('https://res.cloudinary.com/dovgwbnxt/image/upload/v1726125395/Ricamora-Labaya_HomeBG_dxqets.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     scroll-behavior: smooth;
 }
 
@@ -32,18 +27,50 @@ section {
     font-family: "Pinyon Script", cursive;
 }
 
-.elevate {
-    text-shadow: 2px 2px 2px gray;
+.bgDiv {
+    z-index: 2;
+    position: fixed;
+}
+
+.fgDiv {
+    z-index: 3;
+    position: relative;
 }
 
 .mainText {
     width: 100vw;
 }
 
+.homeBg {
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(90deg);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    width: 100vh;
+    height: 100vw;
+}
+
+.imgBg {
+    width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
     .mainText {width: 85vw;}
+    .homeBg {
+        transform: translate(-50%, -50%) rotate(0deg);
+        width: auto;
+        height: auto;
+    }
+    .imgBg {width: auto;}
 }
 
 @media only screen and (min-width: 768px) {
     .mainText {width: 70vw;}
+    .homeBg {
+        transform: translate(-50%, -50%) rotate(0deg);
+        width: auto;
+        height: auto;
+    }
+    .imgBg {width: auto;}
 }
