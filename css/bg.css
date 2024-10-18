@@ -1,19 +1,26 @@
 .loc1 {
-    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1726217782/loc1_ly9out.png");
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729232266/1_kfbrwu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.loc2 {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729232268/Google_Map_j47ior.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .att1 {
-    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1728526686/Attire_vxj4dk.png");
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729232266/3_s9asfn.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .att2 {
-    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1726199857/att2_sau9me.png");
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729232266/Pinterest_Board_m4aqky.png");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
