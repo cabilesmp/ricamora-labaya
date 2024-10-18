@@ -82,6 +82,20 @@ section {
     width: 400px;
 }
 
+.locDiv {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729235848/1_zc7wlg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.attDiv {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729235848/2_hwmksw.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media only screen and (min-width: 600px) {
     .mainText {width: 85vw;}
     .homeBg {
@@ -92,6 +106,8 @@ section {
     .imgBg {width: auto;}
     .contentHeight {height: 100vh;}
     .navWidth {width: 800px;}
+    .locDiv {background-image: none;}
+    .attDiv {background-image: none;}
 }
 
 @media only screen and (min-width: 768px) {
