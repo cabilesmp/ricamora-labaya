@@ -9,6 +9,9 @@ const params = new URLSearchParams(url.search)
 const count = params.get('invite')
 let hasPlayed = false
 
+console.log(url)
+console.log(params)
+
 if (count == 2) {
     countDiv.innerHTML = 'Two (2) seats have been reserved in your honor.'
     document.getElementById('name1').innerHTML = 'Guest 1 Full Name'
