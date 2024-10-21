@@ -2,8 +2,21 @@ const navLinks = document.querySelectorAll('.nav-link')
 const detailsBtn = document.getElementById('detailsBtn')
 const sections = document.querySelectorAll('section')
 const rsvpBtn1 = document.getElementById('rsvpBtn1')
+const countDiv = document.getElementById('countDiv')
 const audioDiv = document.getElementById('bgMusic')
+const url = new URL(window.location.href)
+const params = new URLSearchParams(url.search)
+const count = params.get('invite')
 let hasPlayed = false
+
+if (count == 2) {
+    countDiv.innerHTML = 'Two (2) seats have been reserved in your honor.'
+    document.getElementById('name1').innerHTML = 'Guest 1 Full Name'
+    document.getElementById('name2').innerHTML = 'Guest 2 Full Name'
+    document.getElementById('name2Div').style.display = ''
+} else if (count == 1) {
+    countDiv.innerHTML = 'One (1) seat has been reserved in your honor.'
+}
 
 navLinks.forEach((n) => {
     n.addEventListener('click', () => {

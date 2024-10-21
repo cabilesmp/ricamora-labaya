@@ -26,3 +26,11 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.gift {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729501288/Attire_xrttwb.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position: center;   
+}

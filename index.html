@@ -64,19 +64,27 @@
                 </div>
             </div>
         </section>
+        <div class="sectionBg fgDiv">
+            <div class="gifts d-flex flex-column justify-content-center">
+                <span class="pinyon text-center mb-2" style="font-size: 100px; color: #fece5d;">Gifts</span>
+                <div class="playfair text-center px-5 fs-2">We're excited to celebrate with you, and your presence is the greatest gift.</div>
+                <div class="playfair text-center px-5 fs-2">If you'd like to contribute further, a monetary gift toward our future would be warmly appreciated.</div>
+            </div>
+        </div>
         <section id="rsvp" class="sectionBg fgDiv">
             <div class="d-flex flex-column justify-content-center h-100">
-                <span class="pinyon text-center mb-2" style="font-size: 100px; color: #fece5d;">RSVP</span>
-                <div class="playfair text-center px-5" style="font-size: 24px;">We are excited to celebrate our special moment with you.</div>
-                <div class="playfair text-center px-5 mb-3" style="font-size: 24px;">Please confirm your attendance by providing your name below.</div>
+                <span class="pinyon text-center mb-2" style="font-size: 100px; color: #fece5d;">RS V P</span>
+                <div class="playfair text-center px-5 fs-2">We are excited to celebrate our special moment with you.</div>
+                <div id="countDiv" class="playfair text-center px-5 fs-2"></div>
+                <div class="playfair text-center px-5 mb-3 fs-2">Please confirm your attendance by providing your name below.</div>
                 <div class="playfair">
                     <form class="row g-0 justify-content-center px-5 mb-5">
                         <div class="col-md-3 px-2">
-                            <label for="firstName" class="form-label">First Name</label>
+                            <label id="name1" for="firstName" class="form-label">Guest Full Name</label>
                             <input type="text" class="form-control" id="firstName">
                         </div>
-                        <div class="col-md-3 px-2">
-                            <label for="firstName" class="form-label">Last Name</label>
+                        <div id="name2Div" class="col-md-3 px-2" style="display: none;">
+                            <label id="name2" for="firstName" class="form-label"></label>
                             <input type="text" class="form-control" id="firstName">
                         </div>
                     </form>
