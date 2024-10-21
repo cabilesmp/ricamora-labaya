@@ -2,6 +2,8 @@ const navLinks = document.querySelectorAll('.nav-link')
 const detailsBtn = document.getElementById('detailsBtn')
 const sections = document.querySelectorAll('section')
 const rsvpBtn1 = document.getElementById('rsvpBtn1')
+const audioDiv = document.getElementById('bgMusic')
+let hasPlayed = false
 
 navLinks.forEach((n) => {
     n.addEventListener('click', () => {
@@ -33,4 +35,12 @@ document.addEventListener('scroll', () => {
             })
         }
     })
+})
+
+document.addEventListener('click', () => {
+    if (!hasPlayed) {
+        audioDiv.play().then(() => {
+            hasPlayed = true
+        })
+    }
 })
