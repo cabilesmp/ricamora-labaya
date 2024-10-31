@@ -1,107 +1,116 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <base target="_top">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
 
-<head>
-    <base target="_top">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/bg.css">
-</head>
-
-<body>
-    <header style="z-index: 4;">
-        <nav class="navbar navbar-expand">
-            <div class="navbar-nav m-auto d-flex justify-content-evenly navWidth">
-                <a class="nav-link pinyon fw-bold fs-3 active" href="#home">Home</a>
-                <a class="nav-link pinyon fw-bold fs-3" href="#location">Location</a>
-                <a class="nav-link pinyon fw-bold fs-3" href="#attire">Attire</a>
-                <a class="nav-link pinyon fw-bold fs-3" href="#rsvp">RSVP</a>
-            </div>
-        </nav>
-    </header>
-    <div class="d-flex flex-column homeBg">
-        <img src="https://res.cloudinary.com/dovgwbnxt/image/upload/v1726125395/Ricamora-Labaya_HomeBG_dxqets.png" class="imgBg">
-    </div>
-    <div class="d-flex flex-column top-50 start-50 translate-middle mainText bgDiv">
-        <div style="height: 50px;"></div>
-        <img src="https://res.cloudinary.com/dovgwbnxt/image/upload/v1726125614/Ricamora-Labaya_MainText_axdqhz.png">
-        <button id="rsvpBtn1" class="rsvpBtn align-self-center btn btn-secondary mb-3 playfair"><i class="bi bi-calendar2-heart"></i> RSVP</button>
-        <div class="align-self-center playfair">More Details</div>
-        <button id="detailsBtn" type="button" class="btn">
-            <img class="align-self-center" src="https://content.invisioncic.com/p289038/monthly_2020_05/arrow-down.gif.8d9aec7b8f92f2a50a1a64fce1733f3a.gif" width="50px" height="50px">
-        </button>
-    </div>
-    <div class="container g-0">
-        <section id="home" class="position-relative">
-        </section>
-        <section id="location" class="sectionBg fgDiv elevate">
-            <div class="d-flex row g-0 locDiv">
-                <div class="col-md-6 loc1 contentHeight"></div>
-                <div class="col-md-6 contentHeight position-relative">
-                    <div class="position-absolute top-50 start-50 translate-middle" style="width: 90%; aspect-ratio: 1;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15701.059422626344!2d123.88639296804854!3d10.320676147424544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33a9994619a399c5%3A0x62ccfa864eb99b47!2sRedemptorist%20Church%2C%20Queen&#39;s%20Rd%2C%20Cebu%20City%2C%206000%20Cebu!3m2!1d10.3127066!2d123.8978061!4m5!1s0x33a99924ded73f45%3A0x36980a1a7297b487!2sCirca%201900%2C%20Sanjercasvil%20Extension%20Road%2C%20Cebu%20City%2C%20Cebu!3m2!1d10.3269731!2d123.9000916!5e0!3m2!1sen!2sph!4v1728521961365!5m2!1sen!2sph" width="100%" height="100%" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+    <body id="body" class="overflow-hidden">
+        <header style="z-index: 4;">
+            <nav class="navbar navbar-expand">
+                <div class="navbar-nav m-auto d-flex justify-content-evenly navWidth">
+                    <a class="nav-link pinyon fw-bold fs-3 active" href="#home">Home</a>
+                    <a class="nav-link pinyon fw-bold fs-3" href="#location">Location</a>
+                    <a class="nav-link pinyon fw-bold fs-3" href="#attire">Attire</a>
+                    <a class="nav-link pinyon fw-bold fs-3" href="#rsvp">RSVP</a>
                 </div>
-            </div>
-        </section>
-        <section id="attire" class="sectionBg fgDiv">
-            <div class="d-flex row g-0 attDiv">
-                <div class="col-md-6 att1 contentHeight"></div>
-                <div class="col-md-6 contentHeight position-relative">
-                    <div class="position-absolute top-50 start-50 translate-middle" style="width: 90%; aspect-ratio: 1;">
-                        <iframe src="https://petracoding.github.io/pinterest/board.html?link=ezyl_veronne/peter-and-ezyl-wedding-dress-code-guests/&hideHeader=1&transparent=1" width="100%" height="100%"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="sectionBg fgDiv">
-            <div class="gifts d-flex flex-column justify-content-center">
-                <span class="pinyon text-center mb-2" style="font-size: 100px; color: #fece5d;">Gifts</span>
-                <div class="playfair text-center px-5 fs-2">We're excited to celebrate with you, and your presence is the greatest gift.</div>
-                <div class="playfair text-center px-5 fs-2">If you'd like to contribute further, a monetary gift toward our future would be warmly appreciated.</div>
-            </div>
+            </nav>
+        </header>
+        <div class="d-flex flex-column homeBg">
+            <img src="https://res.cloudinary.com/dovgwbnxt/image/upload/v1726125395/Ricamora-Labaya_HomeBG_dxqets.png" class="imgBg">
         </div>
-        <section id="rsvp" class="sectionBg fgDiv">
-            <div class="d-flex flex-column justify-content-center h-100">
-                <span class="pinyon text-center mb-2" style="font-size: 100px; color: #fece5d;">RS V P</span>
-                <div class="playfair text-center px-5 fs-2">We are excited to celebrate our special moment with you.</div>
-                <div id="countDiv" class="playfair text-center px-5 fs-2"></div>
-                <div class="playfair text-center px-5 mb-3 fs-2">Please confirm your attendance by providing your name below.</div>
-                <div class="playfair">
-                    <form class="row g-0 justify-content-center px-5 mb-5">
-                        <div class="col-md-3 px-2">
-                            <label id="name1" for="firstName" class="form-label">Guest Full Name</label>
-                            <input type="text" class="form-control" id="firstName">
+        <div class="d-flex flex-column top-50 start-50 translate-middle mainText bgDiv">
+            <div style="height: 50px;"></div>
+            <img src="https://res.cloudinary.com/dovgwbnxt/image/upload/v1726125614/Ricamora-Labaya_MainText_axdqhz.png">
+            <button id="rsvpBtn1" class="rsvpBtn align-self-center btn btn-secondary mb-3 playfair"><i class="bi bi-calendar2-heart"></i> RSVP</button>
+            <div class="align-self-center playfair">More Details</div>
+            <button id="detailsBtn" type="button" class="btn">
+                <img class="align-self-center" src="https://content.invisioncic.com/p289038/monthly_2020_05/arrow-down.gif.8d9aec7b8f92f2a50a1a64fce1733f3a.gif" width="50px" height="50px">
+            </button>
+        </div>
+        <div class="container g-0">
+            <section id="home" class="position-relative"></section>
+            <section id="location" class="sectionBg fgDiv elevate">
+                <div class="d-flex row g-0 locDiv">
+                    <div class="col-md-6 loc1 contentHeight"></div>
+                    <div class="col-md-6 loc2 contentHeight position-relative">
+                        <div class="position-absolute top-50 start-50 translate-middle" style="width: 90%; aspect-ratio: 1;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d15701.059422626344!2d123.88639296804854!3d10.320676147424544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33a9994619a399c5%3A0x62ccfa864eb99b47!2sRedemptorist%20Church%2C%20Queen&#39;s%20Rd%2C%20Cebu%20City%2C%206000%20Cebu!3m2!1d10.3127066!2d123.8978061!4m5!1s0x33a99924ded73f45%3A0x36980a1a7297b487!2sCirca%201900%2C%20Sanjercasvil%20Extension%20Road%2C%20Cebu%20City%2C%20Cebu!3m2!1d10.3269731!2d123.9000916!5e0!3m2!1sen!2sph!4v1728521961365!5m2!1sen!2sph" width="100%" height="100%" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div id="name2Div" class="col-md-3 px-2" style="display: none;">
-                            <label id="name2" for="firstName" class="form-label"></label>
-                            <input type="text" class="form-control" id="firstName">
-                        </div>
-                    </form>
-                    <div class="d-flex justify-content-center">
-                        <button class="btn btn-warning playfair mx-2" style="width: auto; height: auto;">Yes, I can attend.</button>
-                        <button class="btn btn-secondary playfair mx-2" style="width: auto; height: auto;">Sorry, I can't.</button>
                     </div>
                 </div>
+            </section>
+            <section id="attire" class="sectionBg fgDiv">
+                <div class="d-flex row g-0 attDiv">
+                    <div class="col-md-6 att1 contentHeight"></div>
+                    <div class="col-md-6 contentHeight position-relative">
+                        <div class="position-absolute top-50 start-50 translate-middle" style="width: 90%; aspect-ratio: 1;">
+                            <iframe class="preview" src="https://petracoding.github.io/pinterest/board.html?link=ezyl_veronne/peter-and-ezyl-wedding-dress-code-guests/&hideHeader=1transparent=1" width="100%" height="100%"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="sectionBg fgDiv">
+                <div class="gifts d-flex flex-column justify-content-center py-5">
+                    <span class="pinyon text-center mb-1" style="font-size: 100px; color: #fece5d;">Gifts</span>
+                    <div class="playfair text-center px-5 fs-4">We're excited to celebrate with you, and your presence is the greatest gift.</div>
+                    <div class="playfair text-center px-5 fs-4">If you'd like to contribute further, a monetary gift toward our future would be warmly appreciated.</div>
+                </div>
             </div>
-        </section>
-    </div>
-    <audio id="bgMusic" src="audio/bg.mp3" preload="auto"></audio>
+            <section id="rsvp" class="sectionBg fgDiv">
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <span class="pinyon text-center mb-2" style="font-size: 100px; color: #fece5d;">RS V P</span>
+                    <div id="rsvpText1" class="playfair text-center px-5 fs-3"></div>
+                    <div id="rsvpText2" class="playfair text-center px-5 mb-5 fs-3">Please confirm your attendance by providing your name below.</div>
+                    <div id="rsvpForm" class="playfair">
+                        <form class="row g-0 justify-content-center px-5 mb-5">
+                            <div class="col-md-4 px-2 mb-3">
+                                <label for="firstName" class="form-label">Guest Full Name</label>
+                                <input type="text" class="form-control" id="fullName">
+                            </div>
+                            <div id="name2Div" class="col-md-4 px-2 mb-3" style="display: none;">
+                                <label for="count" class="form-label">Number of guest/s attending (including you)</label>
+                                <input type="number" class="form-control" id="count">
+                            </div>
+                        </form>
+                        <div id="buttons" class="d-flex justify-content-center">
+                            <button class="btn btn-warning playfair mx-2" style="width: auto; height: auto;" onclick="saveRSVPyes()">Yes, I can attend.</button>
+                            <button class="btn btn-secondary playfair mx-2" style="width: auto; height: auto;" onclick="showError('Test')">Sorry, I can't.</button>
+                        </div>
+                        <div id="loader" class="d-flex justify-content-center align-items-center playfair d-none">
+                            <div class="spinner-border" style="color: #fece5d;" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <span class="ms-2">Saving response. Please be patient.</span>
+                        </div>
+                        <div id="success" class="d-flex justify-content-center align-items-center playfair d-none">
+                            <i class="bi bi-check2-circle fs-3" style="color: #fece5d;"></i>
+                            <span class="ms-2">Thank you for responding!</span>
+                        </div>
+                        <div id="error" class="d-flex justify-content-center align-items-center playfair mt-2 d-none">
+                            <i class="bi bi-emoji-dizzy fs-3" style="color: lightcoral"></i>
+                            <span id="errorMsg" class="ms-2"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="js/homepage.js"></script>
-</body>
+        <audio id="bgMusic" src="audio/bg.mp3" preload="auto"></audio>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+        <script src="js/homepage.js"></script>
+    </body>
 </html>

@@ -4,6 +4,8 @@ html {
 
 body {
     scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -82,27 +84,32 @@ section {
     width: 400px;
 }
 
-.locDiv {
-    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729235848/1_zc7wlg.png");
+.loc1 {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729581970/1_yv2tdn.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.attDiv {
-    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729235848/2_hwmksw.png");
+.loc2 {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/a_hflip/v1729581970/2_fzrvxp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.att1 {
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729581970/3_g9vl4v.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .gifts {
-    padding-left: 5%;
-    padding-right: 5%;
-    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729502886/Attire_1_lgfddf.png");
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729643218/Attire_3_g9oagy.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -115,9 +122,10 @@ section {
     .imgBg {width: auto;}
     .contentHeight {height: 100vh;}
     .navWidth {width: 800px;}
-    .locDiv {background-image: none;}
-    .attDiv {background-image: none;}
-    .gifts {padding-left: 10%; padding-right: 10%; background-image: none;}
+    .loc1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729643514/Attire_4_zzbqo9.png");}
+    .loc2 {background-image: none;}
+    .att1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729643091/Attire_2_ofbu4p.png");}
+    .gifts{background-image: none;}
 }
 
 @media only screen and (min-width: 768px) {
@@ -130,5 +138,8 @@ section {
     .imgBg {width: auto;}
     .contentHeight {height: 100vh;}
     .navWidth {width: 800px;}
-    .gifts {padding-left: 10%; padding-right: 10%; background-image: none;}
+    .loc1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729643514/Attire_4_zzbqo9.png"); background-size: contain;}
+    .loc2 {background-image: none;}
+    .att1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729643091/Attire_2_ofbu4p.png"); background-size: contain;}
+    .gifts{background-image: none;}
 }
