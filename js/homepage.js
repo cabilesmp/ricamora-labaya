@@ -104,6 +104,7 @@ function saveRSVPyes() {
 }
 
 function saveRSVPno() {
+    const count = params.get('invite')
     const fullName = document.getElementById('fullName').value
 
     if (fullName.trim() === '') {
@@ -130,21 +131,15 @@ function showError(message) {
 
 function sendResponse(body) {
     const url = 'https://script.google.com/macros/s/AKfycbzlZyVEde9aM8pluAXF-zCdthFVMIPyrtnEnPEZsNtw1CfrEYCpbNJynovrdXsknWjRew/exec'
-    
-    fetch(url, {
-        method: 'POST',
-        body: JSON.stringify(body),
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    })
-    .then(response => response.json())
-    .then(() => {
+    console.log(url + `?name=${body[0]}&response=${body[1]}&allocated=${body[2]}&confirmed=${body[3]}`)
+
+    fetch(url + `?name=${body[0]}&response=${body[1]}&allocated=${body[2]}&confirmed=${body[3]}`, {
+        method: 'GET',
+        mode: 'no-cors'
+    }).then(() => {
         loader.classList.add('d-none')
         success.classList.remove('d-none')
-
-        setTimeout(() => {
-            success.classList.add('d-none')
-        }, 3000)
+    }).catch(error => {
+        console.error(error)
     })
 }
