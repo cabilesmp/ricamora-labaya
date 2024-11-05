@@ -30,14 +30,13 @@ if (params.toString()) {
         document.getElementById('name2Div').style.display = ''
     }
 
-    let rsvpText = `${textMap[count]} (${count}) seat has been reserved in your honor.`
+    let rsvpText = `${textMap[count]} (${count}) seat/s has been reserved in your honor. Please confirm your attendance by providing your name below.`
     document.getElementById('rsvpText1').innerHTML = rsvpText
     document.getElementById('count').setAttribute('max', count)
 
 
 } else {
     document.getElementById('rsvpForm').style.display = 'none'
-    document.getElementById('rsvpText2').style.display = 'none'
 }
 
 navLinks.forEach((n) => {
