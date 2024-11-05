@@ -24,13 +24,16 @@ if (params.toString()) {
         8: "Eight",
         9: "Nine",
         10: "Ten"
-    };
+    }
+    let rsvpText = ''
 
     if (count > 1) {
         document.getElementById('name2Div').style.display = ''
+        rsvpText = `${textMap[count]} (${count}) seat/s have been reserved in your honor. Please confirm your attendance by providing your name below.`
+    } else {
+        rsvpText = `One (1) seat has been reserved in your honor. Please confirm your attendance by providing your name below.`
     }
 
-    let rsvpText = `${textMap[count]} (${count}) seat/s has been reserved in your honor. Please confirm your attendance by providing your name below.`
     document.getElementById('rsvpText1').innerHTML = rsvpText
     document.getElementById('count').setAttribute('max', count)
 
