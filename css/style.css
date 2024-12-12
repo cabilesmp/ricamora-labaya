@@ -99,7 +99,7 @@ section {
 }
 
 .att1 {
-    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1733963515/4_jnvlr1.png");
+    background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1734012228/4_biht0o.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -124,7 +124,7 @@ section {
     .navWidth {width: 800px;}
     .loc1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729643514/Attire_4_zzbqo9.png");}
     .loc2 {background-image: none;}
-    .att1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1733963515/5_hziohn.png");}
+    .att1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1734012227/5_ii5cac.png");}
     .gifts{background-image: none;}
 }
 
@@ -140,6 +140,6 @@ section {
     .navWidth {width: 800px;}
     .loc1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1729643514/Attire_4_zzbqo9.png"); background-size: contain;}
     .loc2 {background-image: none;}
-    .att1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1733963515/5_hziohn.png"); background-size: contain;}
+    .att1 {background-image: url("https://res.cloudinary.com/dovgwbnxt/image/upload/v1734012227/5_ii5cac.png"); background-size: contain;}
     .gifts{background-image: none;}
 }
